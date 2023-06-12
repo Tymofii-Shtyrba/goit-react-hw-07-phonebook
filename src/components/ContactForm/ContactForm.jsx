@@ -10,7 +10,6 @@ export default function ContactForm() {
     event.preventDefault();
     const name = event.target.elements.name.value;
     const phone = event.target.elements.phone.value;
-    console.log(name, phone);
     dispatch(addContact({ name, phone }));
     event.target.reset();
   };

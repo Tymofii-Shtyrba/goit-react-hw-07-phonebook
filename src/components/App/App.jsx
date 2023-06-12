@@ -5,7 +5,6 @@ import ContactsList from 'components/ContactsList/ContactsList';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchContacts } from 'redux/operations';
-import { BeatLoader } from 'react-spinners';
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -19,7 +18,6 @@ export const App = () => {
       <Form />
       <Filter />
       <ContactsList />
-      <BeatLoader />
     </Phonebook>
   );
 };
